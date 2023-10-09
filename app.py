@@ -1,8 +1,14 @@
+import os
+import sys
+from dotenv import load_dotenv
 from flask import Flask, request, redirect, render_template
 from flask_limiter import Limiter
 from flask_limiter.util import get_remote_address
-from utils.database import Database
-from conf import Conf
+from database.database import Database
+
+envPath = sys.path[0]+'/.env'
+load_dotenv(envPath)
+PORT = os.environ.get("PORT")
 
 db = Database()
 
@@ -47,6 +53,3 @@ def get(refer):
 
     else:
         return redirect(getToPage)
-
-if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=Conf.PORT)

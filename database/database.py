@@ -1,14 +1,20 @@
+import os
+import sys
+from dotenv import load_dotenv
 from pymongo import MongoClient
 from certifi import where
 import secrets
 from urllib.parse import urlparse
-from conf import Conf
-from utils.errors import Error
+from database.errors import Error
 from utils.secure import *
+
+envPath = sys.path[0]+'/.env'
+load_dotenv(envPath)
+DB_URI = os.environ.get("DB_URI")
 
 class Database:
     # config DB connection
-    host = MongoClient(Conf.DB_URI, tlsCAFile=where())
+    host = MongoClient(DB_URI, tlsCAFile=where())
     db = host.shouft
     collection = db.urls
 
