@@ -2,8 +2,9 @@
 Shouft is a Url Shortener Web Application.
 This tool allows users to use personalized or automatically generated links to reach other websites.
 
+</br>
 <div align="center">
-  <img src="https://github.com/lorenzobunaj/eigenkit/blob/main/eigenkit-logo.svg" width="200"/>
+  <img src="https://github.com/lorenzobunaj/shouft/blob/main/shouft-logo-readme.png" width="250"/>
 </div>
 </br>
 
