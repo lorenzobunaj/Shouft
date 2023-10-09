@@ -22,7 +22,7 @@ html {
 
 /* media queries */
 @media (min-width: 993px) {
-    #navbar-menu-md- {
+    #navbar-menu-md {
         display: none;
     }
     #io-form {

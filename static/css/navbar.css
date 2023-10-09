@@ -1,6 +1,3 @@
-
-@import './style.css';
-
 /* navbar */
 nav {
     backdrop-filter: saturate(160%) blur(15px);
