@@ -1,5 +1,5 @@
 # Shouft Url Shortener
-Shouft a Url Shortener Web Application.
+Shouft is a Url Shortener Web Application.
 This tool allows users to use personalized or automatically generated links to reach other websites.
 
 ## Features
