@@ -12,17 +12,17 @@ This tool allows users to use personalized or automatically generated links to r
 ## Features
 
 - It allows the user not only to generate new links but also to choose them so that they are personalized
-- Developed using the [Python Programming Language](https://www.python.org) with [Flask Framework](https://flask.palletsprojects.com/en/3.0.x/), for which exists a large community that can help at any time with any problem
+- Developed using Python Programming Language with [Flask Framework](https://flask.palletsprojects.com/en/3.0.x/), for which exists a large community that can help at any time with any problem
 - High Scalable and Performant
 - Open Source
 
 ## What's Included
 
-:heavy_check_mark: Python with Flask Framework Backend
+:heavy_check_mark: Python with Flask Framework on the Backend
 
 :heavy_check_mark: MongoDB NoSQL Serverless Database
 
-:heavy_check_mark: Javascript with React.js Library Frontend
+:heavy_check_mark: HTML5, CSS3, Vanilla Javascript ES6+ with [PyPugJS](https://github.com/kakulukia/pypugjs) Template Engine on the Frontend
 
 :heavy_check_mark: Responsive Layout with Bootstrap 5
 
