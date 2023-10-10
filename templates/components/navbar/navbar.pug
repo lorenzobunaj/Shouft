@@ -1,0 +1,30 @@
+include components/navbar/mobile.pug
+
+// navbar
+nav(class="navbar navbar-expand-lg sticky-top bg-light bg-opacity-10 z-2")
+    div(class="container-fluid")
+        div(class="container")
+            div(class="row justify-content-between align-items-center")
+                // navbar brand 
+                div(class="col-4 justify-content-center ms-4")
+                    a(class="navbar-brand d-flex justify-content-center" href="#")
+                        img(id="logo" src="../static/img/urlfy.png" class="h-auto")
+                // navbar menu (width > 992px) 
+                div(id="navbar-menu-lg" class="col-4")
+                    div(class="collapse navbar-collapse d-flex justify-content-center")
+                        // navbar menu items 
+                        ul(class="navbar-nav")
+                            li(class="nav-item mx-2")
+                                a(class="nav-link active text-white" aria-current="page" href="../") Home
+                            li(class="nav-item mx-2")
+                                a(class="nav-link active text-white" aria-current="page" href="../about") About Me
+                            li(class="nav-item mx-2")
+                                a(class="nav-link active text-white" aria-current="page" href="https://github.com/lorenzobunaj/shorturlfy") Github
+                // navbar menu (width < 992px) 
+                div(id="navbar-menu-md" class="col-4")
+                    div(class="collapse navbar-collapse d-flex justify-content-end")
+                        // mobile menu button 
+                        ul(class="navbar-nav")
+                            li(class="nav-item mx-2")
+                                button(id="show-nav-button" class="nav-link active text-white" aria-current="page" href="https://github.com/lorenzobunaj/shouft")
+                                    i(class="fa-sharp fa-solid fa-bars")

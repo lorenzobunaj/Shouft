@@ -27,6 +27,10 @@ limiter = Limiter(
 def index():
     return render_template("home.pug")
 
+@app.route("/about")
+def about():
+    return render_template("about.pug")
+
 # add the url to DB and return the refer if not given
 @app.route("/add", methods=["POST"])
 @limiter.limit("5/30second")
