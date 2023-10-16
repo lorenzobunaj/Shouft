@@ -8,8 +8,9 @@ nav {
     visibility: hidden;
     transition: left .5s;
 }
+
 /* media queries */
-@media only screen and (max-width: 992px){
+@media only screen and (max-width: 992px) {
     #show-nav-button {
         background: none;
         opacity: 100%;
@@ -17,11 +18,30 @@ nav {
         cursor: pointer;
         transition: .5s;
     }
+
     #nav-mobile-menu {
         visibility: visible;
         left: -81%;
         background-color: var(--nav-mobile-color);
     }
+}
+
+.nav-item {
+    background-color: transparent;
+    transition: all .2s
+}
+.nav-item p {
+    height: auto;
+    font-weight: 500;
+    color: white;
+    transition: all .2s;
+}
+
+.nav-item:hover {
+    background-color: white;
+}
+.nav-item:hover p {
+    color: #0d1117;
 }
 
 /* background cover during the scroll */
