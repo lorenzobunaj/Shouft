@@ -65,22 +65,37 @@ html {
 }
 
 /* input-output section */
-#io-field {
+#i-field {
     width: 100%;
     background-color: var(--body-bg-color);
     border: solid 3px var(--input-border-color);
-    /*animation: appear 2.0s forwards;
-    transition: .3s;*/
+    /*animation: appear 2.0s forwards;*/
+    transition: all .1s;
     box-shadow: 0;
     outline: none;
 }
 
-#io-field:hover, #io-field:focus {
+#i-field:hover, #i-field:focus {
     box-shadow: 0px 0px 10px var(--input-border-color);
     -webkit-box-shadow: 0px 0px 10px var(--input-border-color);
 }
-#io-field.invalid {
+#i-field.invalid {
     animation: invalid .3s infinite forwards;
+}
+
+#o-field {
+    width: 100%;
+    background-color: var(--body-bg-color);
+    border: solid 3px #444444;
+    /*animation: appear 2.0s forwards;*/
+    transition: all .1s;
+    box-shadow: 0;
+    outline: none;
+}
+
+#o-field:hover, #o-field:focus {
+    box-shadow: 0px 0px 5px #beb3b3;
+    -webkit-box-shadow: 0px 0px 5px #beb3b3;
 }
 
 @keyframes appear {

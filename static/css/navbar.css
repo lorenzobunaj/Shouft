@@ -7,6 +7,18 @@ nav {
 #nav-mobile-menu {
     visibility: hidden;
     transition: left .5s;
+    font-weight: 500;
+    height: 100%;
+}
+
+@media only screen and (min-width: 993px) {
+    .nav-item:hover {
+        background-color: white;
+    }
+
+    .nav-item:hover p {
+        color: #0d1117;
+    }
 }
 
 /* media queries */
@@ -30,17 +42,30 @@ nav {
     background-color: transparent;
     transition: all .2s
 }
+
 .nav-item p {
     height: auto;
     font-weight: 500;
     color: white;
-    transition: all .2s;
+    transition: all .3s;
 }
 
-.nav-item:hover {
-    background-color: white;
+.nav-mobile-item {
+    background-color: transparent;
+    transition: all .2s
 }
-.nav-item:hover p {
+
+.nav-mobile-item a {
+    height: auto;
+    width: auto;
+    font-weight: 500;
+    color: white;
+    transition: all .3s;
+}
+
+
+.nav-mobile-item a:hover {
+    background-color: white;
     color: #0d1117;
 }
 

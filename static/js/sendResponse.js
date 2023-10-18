@@ -9,8 +9,7 @@ const sendResponse = (CONF, status) => {
 const goodResponse = (CONF, refer) => {
     changeColors(CONF);
     CONF.inputField.value = refer;
-    CONF.inputField.classList.add("text-center")
-    CONF.inputButton.innerText = "copy";
+    CONF.inputButton.querySelector('p').innerText = "copy";
 }
 // change the color theme (red <-> blue)
 const changeColors = (CONF) => {

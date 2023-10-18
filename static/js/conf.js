@@ -2,7 +2,7 @@
 const CONF = {
     root: document.querySelector(':root'),
     body: document.querySelector('body'),
-    inputField: document.querySelector('#io-field'),
+    inputField: document.querySelector('#i-field'),
     inputButton: document.querySelector('#i-button'),
     textButton: document.querySelector('#i-button p'),
     navbar: document.querySelector('nav'),

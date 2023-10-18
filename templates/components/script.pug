@@ -19,6 +19,11 @@ script.
 script(type="module").
     import CONF from "{{url_for('static', filename='js/conf.js')}}";
     import postUrl from "{{url_for('static', filename='js/postUrl.js')}}";
+    import navbar from "{{url_for('static', filename='js/navbar.js')}}";
  
     // event listeners
     CONF.inputButton.addEventListener('click', () => postUrl(CONF));
+    CONF.navButton.addEventListener('click', () => navbar.show(CONF));
+    document.addEventListener('click', (event) => {
+        if (event.clientX > CONF.navMenu.getBoundingClientRect().right) navbar.hide(CONF);
+    });
