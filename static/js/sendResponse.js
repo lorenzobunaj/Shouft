@@ -8,7 +8,7 @@ const sendResponse = (CONF, status) => {
 
 const goodResponse = (CONF, refer) => {
     changeColors(CONF);
-    CONF.inputField.value = refer;
+    CONF.outputField.value = `shouft.org/${refer}`;
     CONF.inputButton.querySelector('p').innerText = "copy";
 }
 // change the color theme (red <-> blue)

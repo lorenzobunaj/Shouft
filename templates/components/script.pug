@@ -20,6 +20,11 @@ script(type="module").
     import CONF from "{{url_for('static', filename='js/conf.js')}}";
     import postUrl from "{{url_for('static', filename='js/postUrl.js')}}";
     import navbar from "{{url_for('static', filename='js/navbar.js')}}";
+
+    window.onload = () => {
+        CONF.inputField.value = "";
+        CONF.outputField.value = "";
+    }
  
     // event listeners
     CONF.inputButton.addEventListener('click', () => postUrl(CONF));

@@ -2,14 +2,18 @@ import sendResponse from "./sendResponse.js";
 
 // manage the user interaction
 const postUrl = (CONF) => {
+    console.log('button clicked');
     if (CONF.inputButton.innerText === "SHORT") {
+        console.log('--> short');
         shortUrl(CONF);
     } else if (CONF.inputButton.innerText === "COPY") {
+        console.log('--> copy');
         copyUrl(CONF);
     }
 }
 // add function
 const shortUrl = async (CONF) => {
+    console.log(`url: ${CONF.inputField.value}`);
     try {
         // fetch the add api
         const response = await fetch('/add', {
@@ -24,6 +28,8 @@ const shortUrl = async (CONF) => {
         })
 
         const statusObject = await response.json();
+        console.log(`status: ${statusObject}`);
+
         sendResponse(CONF, statusObject["status"]);
 
     } catch (err) {
@@ -31,6 +37,6 @@ const shortUrl = async (CONF) => {
     }
 }
 
-const copyUrl = (CONF) => navigator.clipboard.writeText(`short.urlfy.org/${CONF.inputField.value}`);
+const copyUrl = (CONF) => navigator.clipboard.writeText(CONF.outputField.value);
 
 export default postUrl;
