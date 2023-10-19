@@ -72,5 +72,5 @@ vendor==0.1
 virtualenv==20.18.0
 virtualenv-clone==0.5.7
 wcwidth==0.1.9
-Werkzeug==2.3.7
+Werkzeug==2.2.2
 wrapt==1.14.1
