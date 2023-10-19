@@ -2,6 +2,7 @@ certifi==2022.12.7
 cryptography==39.0.0
 Flask==2.2.2
 Flask-Limiter==3.1.0
+Werkzeug==2.2.2
 Jinja2==3.1.2
 limits==3.2.0
 pymongo==4.3.3
