@@ -2,8 +2,8 @@ import os
 import sys
 from dotenv import load_dotenv
 from flask import Flask, request, redirect, render_template
-from flask_limiter import Limiter
-from flask_limiter.util import get_remote_address
+#from flask_limiter import Limiter
+#from flask_limiter.util import get_remote_address
 from database.database import Database
 
 envPath = sys.path[0]+'/.env'
@@ -15,11 +15,11 @@ db = Database()
 app = Flask(__name__)
 app.jinja_env.add_extension('pypugjs.ext.jinja.PyPugJSExtension')
 
-limiter = Limiter(
-    get_remote_address,
-    app=app,
-    storage_uri="memory://"
-)
+#limiter = Limiter(
+#    get_remote_address,
+#    app=app,
+#    storage_uri="memory://"
+#)
 
 # render index.html
 @app.route("/")
@@ -32,7 +32,7 @@ def about():
 
 # add the url to DB and return the refer if not given
 @app.route("/add", methods=["POST"])
-@limiter.limit("5/30second")
+#@limiter.limit("5/30second")
 def add():
     addToDb = db.addUrl(request.get_json()["url"], request.get_json()["refer"])
 
@@ -47,7 +47,7 @@ def add():
 
 # redirect
 @app.route('/<refer>', methods=["GET"])
-@limiter.limit("10/30second")
+#@limiter.limit("10/30second")
 def get(refer):
     getToPage = db.getUrl(refer)
 
