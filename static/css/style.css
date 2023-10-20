@@ -188,6 +188,11 @@ html {
 footer {
     background-color: var(--footer-bg-color);
 }
+@media (max-width: 992px) {
+    .github-footer-link {
+        display: none;
+    }
+}
 
 /* about */
 #about-icon {
