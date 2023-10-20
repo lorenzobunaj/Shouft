@@ -23,7 +23,7 @@ const shortUrl = async (CONF) => {
             },
             body: JSON.stringify({
                 "url": CONF.inputField.value,
-                "refer": ""
+                "refer": CONF.outputField.value
             }) // take the url
         })
 

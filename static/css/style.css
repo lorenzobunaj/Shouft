@@ -64,6 +64,11 @@ html {
     width: 100px;
 }
 
+.title {
+    font-size: 40px;
+    font-weight: bold;
+}
+
 /* input-output section */
 #i-field {
     width: 100%;
@@ -154,7 +159,7 @@ html {
 /* info section */
 #info-sm,
 #info-xs {
-    margin-bottom: 20vh;
+    margin-bottom: 10vh;
 }
 
 #info-sm div div {

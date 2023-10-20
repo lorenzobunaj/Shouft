@@ -8,6 +8,7 @@ const sendResponse = (CONF, status) => {
 
 const goodResponse = (CONF, refer) => {
     changeColors(CONF);
+    CONF.outputField.readOnly = true;
     CONF.outputField.value = `shouft.org/${refer}`;
     CONF.inputButton.querySelector('p').innerText = "copy";
 }

@@ -1,0 +1,13 @@
+// js scripts
+script(type="module").
+    import CONF from "{{url_for('static', filename='js/conf.js')}}";
+    import postUrl from "{{url_for('static', filename='js/postUrl.js')}}";
+
+    window.onload = () => {
+        CONF.inputField.value = "";
+        CONF.outputField.value = "";
+        CONF.outputField.readOnly = false; 
+    }
+ 
+    // event listeners
+    CONF.inputButton.addEventListener('click', () => postUrl(CONF));
