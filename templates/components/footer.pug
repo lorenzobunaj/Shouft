@@ -1,17 +1,26 @@
-// footer
-footer(class="text-center text-white")
-    div(class="text-center p-3")
-    hr(class="mb-5")
+<!-- Remove the container if you want to extend the Footer to full width. -->
+footer(class="text-center text-white" style="background-color: black")
+    div(class="container")
+      section(class="mt-5")
+        div(class="row text-center d-flex justify-content-center pt-5")
+          div(class="col-md-2")
+            h6(class="text-uppercase font-weight-bold")
+              a(href="../" class="text-white text-decoration-none") Get Started
+          div(class="col-md-2")
+            h6(class="text-uppercase font-weight-bold")
+              a(href="../about" class="text-white text-decoration-none") About Us
+          div(class="col-md-2")
+            h6(class="text-uppercase font-weight-bold")
+              a(href="https://github.com/lorenzobunaj/shouft" class="text-white text-decoration-none") Github
 
-    // footer text
+    hr(class="w-100 my-5")
+
     section(class="mb-5")
-        div(class="row d-flex justify-content-center")
-            div(class="col-9")
-                p(id="footer-text").
-                    This Url Shortener was born as a team project with the Evovee team. 
-                    However, the team disbanded, but the project was finished by me.<br>
-                    The original project: 
-                    <a style="color: white" href="https://github.com/evovee/evovee-url-shorter"> Here </a>
-
-    hr(class="mt-5")
-    div(class="text-center p-3")
+      div(class="row d-flex justify-content-center")
+        div(class="col-lg-8")
+          p.
+            For the creation of this Web App, various projects were taken as sources of inspiration. First and foremost bitly.com, of which we wanted to replicate the main services, while making the project free and open source. Furthermore, this Url Shortener was born as a team project with the Evovee team. However, the team disbanded, but the project was finished by me.
+    div(
+        class="text-center p-3"
+        style="background-color: black"
+        )
