@@ -64,10 +64,10 @@ nav {
 }
 
 
-.nav-mobile-item a:hover {
+/*.nav-mobile-item a:hover {
     background-color: white;
     color: #0d1117;
-}
+}*/
 
 /* background cover during the scroll */
 #scroll-cover {
