@@ -3,8 +3,7 @@
     --nav-mobile-color: #26292f;
     --body-bg-color: #0d1117;
     --footer-bg-color: black;
-    --input-border-color: #ff1616;
-    --input-width: 0%;
+    --output-border-color: #ff1616;
     --info-rounded: 7%;
     --text-icon-color: white;
     --invert-icons: 0;
@@ -94,26 +93,18 @@ html {
 #o-field {
     width: 100%;
     background-color: var(--body-bg-color);
-    border: solid 3px var(--input-border-color);
-    /*animation: appear 2.0s forwards;*/
+    border: solid 3px var(--output-border-color);
     transition: all .2s;
     box-shadow: 0;
     outline: none;
 }
 
 #o-field:hover, #o-field:focus {
-    box-shadow: 0px 0px 10px var(--input-border-color);
-    -webkit-box-shadow: 0px 0px 10px var(--input-border-color);
+    box-shadow: 0px 0px 10px var(--output-border-color);
+    -webkit-box-shadow: 0px 0px 10px var(--output-border-color);
 }
-
-@keyframes appear {
-    0% {
-        width: var(--input-width);
-    }
-
-    100% {
-        width: 100%;
-    }
+#o-field.invalid {
+    animation: invalid .3s infinite forwards;
 }
 
 @keyframes invalid {
@@ -154,7 +145,7 @@ html {
 
 #i-button:hover {
     letter-spacing: 0.3rem;
-    border-color: var(--input-border-color);
+    border-color: var(--output-border-color);
     width: 160px;
 }
 

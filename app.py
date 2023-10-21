@@ -34,6 +34,7 @@ def about():
 @app.route("/add", methods=["POST"])
 #@limiter.limit("5/30second")
 def add():
+    # print(f'refer: {request.get_json()["refer"]}')
     addToDb = db.addUrl(request.get_json()["url"], request.get_json()["refer"])
 
     if addToDb == 0:
@@ -41,6 +42,9 @@ def add():
 
     elif addToDb == 2:
         return {"status": 0x2}
+    
+    elif addToDb == 3:
+        return {"status": 0x3}
 
     else:
         return {"status": addToDb}

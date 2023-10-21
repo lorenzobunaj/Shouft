@@ -20,10 +20,14 @@ class Database:
 
     # add url to DB
     def addUrl(self, url, userRefer):
+        # validate the personalized refer
+        if userRefer:
+            if not userRefer.isalnum() or self.collection.find_one({"refer": userRefer}):
+                return Error.INVALID_REFER
+
         try:
             if validUrl(url):
                 refer = secrets.token_hex(7) if userRefer == "" else userRefer
-                print(refer)
 
                 self.collection.insert_one({
                     "url": url,
@@ -40,8 +44,6 @@ class Database:
     # get url from DB
     def getUrl(self, refer):
         # fast validation
-        # if len(refer) != 14: 
-        #    return Error.INVALID_REFER
         
         # if the refer is in the collection --> return the associated url, else return error
         try:
