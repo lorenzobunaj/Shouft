@@ -4,7 +4,7 @@ This tool allows users to use personalized or automatically generated links to r
 
 </br>
 <div align="center">
-  <img src="https://github.com/lorenzobunaj/shouft/blob/main/shouft-logo-readme.png" width="250"/>
+  <img src="https://github.com/lorenzobunaj/Shouft/blob/main/shouft-logo-readme.png" width="250"/>
 </div>
 </br>
 
